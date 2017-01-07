@@ -22,6 +22,9 @@
   ],
 
   "devtools_page": "loader.html",
-  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": false
+  },
   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
 }
