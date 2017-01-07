@@ -98,5 +98,11 @@ a {
 }
 
 .jsonview .num {
-    color: #2d6ddc;
+    color: #e29733;
+}
+.jsonview a {
+    color: #009cea;
+}
+.jsonview span.bool {
+    color: #f74820;
 }
