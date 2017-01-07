@@ -1,9 +1,19 @@
 ## Web Storage Explorer
 **Google Chrome extension for Web Developers**
 
+Web Storage Explorer brings you better ability to explore localStorage and sessionStorage values.
+It integrates with DevTools panel and can parse and beautify JSON values.
+
 <img src="imgs/128.png" alt="Web Storage Explorer logo">
 
-[**Download from Chrome Web Store**](https://chrome.google.com/webstore/detail/web-storage-explorer/hglfomidogadbhelcfomenpieffpfaeb)
+[**&raquo; Install from Chrome Web Store**](https://chrome.google.com/webstore/detail/web-storage-explorer/hglfomidogadbhelcfomenpieffpfaeb)
+
+### Features
+ * JSON parser & beautifier
+ * Shows value type and length
+ * Delete keys and clear storage in one click
+ * Light and Dark themes
+ * Adaptive design
 
 ### Screenshots
 <kbd>
