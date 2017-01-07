@@ -1,0 +1,28 @@
+{
+  "name": "chrome-webstorage-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "manifest.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Deliaz",
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-replace": "^1.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-zip": "^3.2.0",
+    "humanize": "0.0.9",
+    "jquery": "^3.1.1",
+    "jquery-jsonview": "^1.2.3",
+    "rimraf": "^2.5.4",
+    "run-sequence": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+  }
+}

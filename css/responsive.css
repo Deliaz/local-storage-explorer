@@ -1,0 +1,35 @@
+@media (max-width: 800px) {
+    .b-nav_hidden-on-small {
+        width: 180px;
+    }
+
+    .b-main_no-margin-on-small {
+        margin-left: 182px;
+    }
+
+    .b-value-info {
+        margin-left: 137px;
+    }
+}
+
+@media (max-width: 625px) {
+    .b-nav_hidden-on-small {
+        transform: translateX(-100%);
+        width: 240px;
+    }
+
+    .b-main_no-margin-on-small {
+        margin-left: 10px;
+    }
+
+    .b-value-info {
+        margin-left: 7px;
+    }
+}
+
+@media (min-width: 626px) {
+    .b-page-overlay {
+        display: none;
+        opacity: 0;
+    }
+}

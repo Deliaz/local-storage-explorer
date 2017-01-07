@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Web Storage Explorer",
+  "short_name": "WebStorageX",
+  "version": "1.0.0",
+  "minimum_chrome_version": "42",
+  "description": "Developer tool for exploring localStorage and sessionStorage which lets you parse values",
+  "author": "Deliaz",
+
+  "offline_enabled": true,
+
+ "icons": {
+    "38": "imgs/38.png",
+    "48": "imgs/48.png",
+    "128": "imgs/128.png"
+  },
+
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+
+  "devtools_page": "loader.html",
+  "options_page": "options.html",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}

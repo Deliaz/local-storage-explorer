@@ -1,0 +1,99 @@
+body {
+    background-color: #fefefe;
+}
+
+a {
+    color: #0088ee;
+}
+
+.b-header {
+    box-shadow: 0 2px 1px #bbb;
+    background-color: #eaeaea;
+}
+
+.b-header__header-btn {
+    color: #bbbbbb;
+}
+
+.b-header__header-btn:hover,
+.b-header__header-btn_active {
+    background-color: #ccc;
+    color: #777;
+}
+
+.b-value-info {
+    color: #bfbfbf;
+}
+
+.b-subnav-menu {
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 1px #bbb;
+}
+
+.b-subnav-menu__link {
+    color: #000000;
+}
+
+.b-subnav-menu__link:hover {
+    background-color: #e5e5e5;
+}
+
+.b-subnav-menu__link_confirm-animated {
+    background-color: #f9f9f9;
+}
+
+.b-subnav-menu__confirm-link {
+    box-shadow: inset 3px 0 8px -2px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.1s ease, box-shadow 0.15s ease;
+    color: #fff;
+}
+
+.b-subnav-menu__separator {
+    border-bottom: 1px solid #ddd;
+}
+
+.b-nav {
+    box-shadow: 1px 0 2px  #c0c0c0;
+    background: #f0f0f0;
+}
+
+.b-storage-selector__select {
+    background-color: #e0e0e0;
+    color: #7b7b7b;
+    padding: 5px 10px;
+}
+
+.b-keys-menu__link {
+    color: #111;
+}
+
+.b-keys-menu__link:hover,
+.b-keys-menu__link_active {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.b-keys-menu__type-icon {
+    color: rgba(0,0,0,0.20);
+}
+
+.b-nav-footer__btn {
+    color: #aaa;
+}
+
+.b-nav-footer__btn:hover {
+    background-color: #ccc;
+    color: #777;
+}
+
+.b-value-view__initial-text {
+    color: #e9e9e9;
+}
+
+/* JSON VIEW THEME */
+.jsonview .string {
+    color: #00db19;
+}
+
+.jsonview .num {
+    color: #4e00ff;
+}

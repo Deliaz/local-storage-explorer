@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.b-container {
+    margin: 80px auto 20px;
+    width: 480px;
+}
+
+.b-container__main-header {
+    font-size: 20px;
+    color: #555;
+    padding-left: 2px;
+}
+
+.b-options {
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.10);
+    padding: 35px 35px 30px 35px;
+    overflow: hidden;
+}
+
+.b-options__setting {
+    margin-bottom: 25px;
+}
+
+.b-options__setting:last-child {
+    margin-bottom: 0;
+}
+
+.b-options__label {
+    min-width: 110px;
+    display: inline-block;
+}
+
+.b-options__select {
+    min-width: 145px;
+    font-size: 14px;
+}
+
+.b-options__button {
+    border: none;
+    padding: 7px 21px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.40);
+    cursor: pointer;
+    outline: none;
+}
+
+.b-options__button-save {
+    background-color: #24C322;
+    color: #ffffff;
+    transition: background-color 0.1s ease;
+    float: right;
+}
+
+.b-options__button-save:hover {
+    background-color: #22b320;
+}
+
+.b-options__button-save:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+}
+
+@-webkit-keyframes changeBgc {
+    0% {
+        background-color: #99a799;
+    }
+    50% {
+        background-color: #99a799;
+    }
+    100% {
+        background-color: #24C322;
+    }
+}
+
+.b-options__button-save_animated {
+    animation: changeBgc 2.7s;
+}
