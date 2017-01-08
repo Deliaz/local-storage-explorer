@@ -26,12 +26,20 @@ It integrates with DevTools panel and can parse and beautify JSON values.
 	<img src="screenshots/Screen3.png" alt="Screenshot 3" width="260">
 </kbd>
 
+### Contribute
+To build extension just run:
+ 1. `npm install`
+ 2. `gulp`
+
+It will create two folders: 
+ * `build/` &ndash; contains built files
+ * `dist/` &ndash; contains compressed zip-file with files from `built`
+
 #### Todo list
 
 * parse JWT tokens
 * make i18n
 * comments
-* auto-update UI when theme was changed
 * adjustable width of key list
 * Keyboard navigation in key list
 * open by browser action?
