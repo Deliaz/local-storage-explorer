@@ -5,7 +5,7 @@ class WebStorageExplorer {
         this.constants = {};
         this.el = {};
         this.settings = {};
-        this.currentStorageName = 'localStorage';
+        this.currentStorageName = DEFAULT_STORAGE;
 
         this.isNavFloating = false;
         this.lastShownKey = '';
@@ -24,7 +24,7 @@ class WebStorageExplorer {
     }
 
     loadSettings() {
-        this.currentStorageName = localStorage.getItem('storage') || 'localStorage';
+        this.currentStorageName = localStorage.getItem('storage') || DEFAULT_STORAGE;
     }
 
     selectElements() {
