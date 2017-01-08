@@ -276,7 +276,14 @@ class WebStorageExplorer {
                 // TODO remove when crbug.com/679167 will be resolved
                 window.open(chrome.runtime.getURL('options.html'));
             }
-        })
+        });
+
+        // Open links from json view in a new tab
+        this.el.valueView.on('click', 'a[href]', function(e) {
+            e.preventDefault();
+            let href = $(this).attr('href');
+            window.open(href);
+        });
     }
 
     createConstants() {
