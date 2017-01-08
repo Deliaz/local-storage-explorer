@@ -273,6 +273,7 @@ class WebStorageExplorer {
             if (chrome.runtime.openOptionsPage) {
                 chrome.runtime.openOptionsPage();
             } else {
+                // TODO remove when crbug.com/679167 will be resolved
                 window.open(chrome.runtime.getURL('options.html'));
             }
         })
