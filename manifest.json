@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Web Storage Explorer",
   "short_name": "WebStorageX",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minimum_chrome_version": "42",
   "description": "Developer tool for exploring localStorage and sessionStorage which lets you parse values",
   "author": "Deliaz",
