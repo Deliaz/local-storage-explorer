@@ -3,4 +3,5 @@ node_js:
   - "7"
 before_script:
   - npm install -g gulp
+  - npm install -g mocha
 script: gulp
