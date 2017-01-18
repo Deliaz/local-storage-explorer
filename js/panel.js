@@ -1,3 +1,6 @@
+/**
+ * Application class for DevTools panel
+ */
 class WebStorageExplorer {
     constructor() {
         this.storageDriver = new StorageDriver();
@@ -121,7 +124,7 @@ class WebStorageExplorer {
             tpl += `
             <li class="b-keys-menu__item">
                 <a href="#!" class="b-keys-menu__link js-select-key" data-key="${key}" title="${key}">
-                    <i class="fa fa-${WebStorageExplorer.ICON_TYPE[this.storage.get(key).type]} b-keys-menu__type-icon"></i>
+                    <i class="fa fa-${ICON_TYPE[this.storage.get(key).type]} b-keys-menu__type-icon"></i>
                     <span>${key}</span>
                 </a>
             </li>
@@ -420,16 +423,6 @@ class WebStorageExplorer {
         return 'other';
     }
 }
-
-WebStorageExplorer.ICON_TYPE = {
-    'object': 'code',
-    'string': 'font',
-    'array': 'list-ol',
-    'number': 'sort-numeric-asc',
-    'null': 'ban',
-    'boolean': 'check',
-    'other': 'question'
-};
 
 $(document).ready(() => {
     let App = new WebStorageExplorer();
