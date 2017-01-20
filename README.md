@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/Deliaz/web-storage-explorer.svg?branch=master)](https://travis-ci.org/Deliaz/web-storage-explorer)
+![Dependencies Status](https://david-dm.org/Deliaz/web-storage-explorer.svg)
 
 ## Web Storage Explorer
 **Google Chrome extension for Web Developers**
