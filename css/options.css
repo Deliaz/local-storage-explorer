@@ -89,3 +89,7 @@ body {
 .b-options__button-save_animated {
     animation: changeBgc 2.7s;
 }
+
+.b-container__main-header_hidden {
+    display: none;
+}

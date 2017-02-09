@@ -273,12 +273,7 @@ class WebStorageExplorer {
             e.preventDefault();
             this.el.showSubnavBtn.trigger(':hide');
 
-            if (chrome.runtime.openOptionsPage) {
-                chrome.runtime.openOptionsPage();
-            } else {
-                // TODO remove when crbug.com/679167 will be resolved
-                window.open(chrome.runtime.getURL('options.html'));
-            }
+            window.open(chrome.runtime.getURL('options.html?show_header'));
         });
 
         // Open links from json view in a new tab

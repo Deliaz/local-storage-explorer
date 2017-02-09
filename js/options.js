@@ -6,6 +6,7 @@ class Options {
 
     init() {
         this.selectElements();
+        this.showHeader();
         this.loadSettings();
         this.showSettings();
         this.startHandlers();
@@ -17,10 +18,20 @@ class Options {
         this.el = {
             storageSelect: qs('.js-select-storage'),
             themeSelect: qs('.js-select-theme'),
-            saveBtn: qs('.js-save-button')
+            saveBtn: qs('.js-save-button'),
+            header: qs('.js-options-header')
         }
     }
 
+
+    /**
+     * Show main header if 'show_header' flag set in url
+     */
+    showHeader() {
+        if(window.location.search.includes('show_header')) {
+            this.el.header.classList.remove('b-container__main-header_hidden');
+        }
+    }
 
     /**
      * Load saved settings of set defaults instead
