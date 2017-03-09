@@ -89,6 +89,15 @@ a {
     color: #e9e9e9;
 }
 
+.b-json-view-tools__item {
+    border: 1px solid #bbb;
+    color: #999;
+}
+.b-json-view-tools__item:hover {
+    color: #555;
+    border: 1px solid #777;
+}
+
 /* JSON VIEW THEME */
 .jsonview .string {
     color: #008000;
@@ -97,3 +106,4 @@ a {
 .jsonview .num {
     color: #4e00ff;
 }
+/* /JSON VIEW THEME */

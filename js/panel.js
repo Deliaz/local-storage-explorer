@@ -53,7 +53,9 @@ class WebStorageExplorer {
             optionsPageBtn: $('.js-options-page-button'),
 
             clearStorageBtn: $('.js-clear-storage-button'),
-            clearStorageConfirmBtn: $('.js-clear-storage-confirm-button')
+            clearStorageConfirmBtn: $('.js-clear-storage-confirm-button'),
+            
+            jsonViewTools: $('.js-json-view-tools')
         }
     }
 
@@ -282,6 +284,23 @@ class WebStorageExplorer {
             let href = $(this).attr('href');
             window.open(href);
         });
+        
+        this.el.jsonViewTools.on('click', 'button', function(e) {
+            let $thisBtn = $(this);
+
+            switch($thisBtn.data('jsonViewAction').toLowerCase()) {
+                case 'collapse':
+                    self.el.valueView.JSONView('collapse');
+                    break;
+                case 'expand':
+                    self.el.valueView.JSONView('expand');
+                    break;
+                case 'toggle':
+                    console.log($thisBtn.data('jsonViewLevel'));
+                    self.el.valueView.JSONView('toggle', $thisBtn.data('jsonViewLevel') || 1);
+                    break;
+            }
+        });
     }
 
     createConstants() {
@@ -324,8 +343,10 @@ class WebStorageExplorer {
 
         if (typeof val === "object") {
             this.el.valueView.JSONView(val, {collapsed: false});
+            this.el.jsonViewTools.removeClass('b-json-view-tools_hidden');
         } else {
             this.el.valueView.text(val);
+            this.el.jsonViewTools.addClass('b-json-view-tools_hidden');
         }
 
         this.lastShownKey = key;
