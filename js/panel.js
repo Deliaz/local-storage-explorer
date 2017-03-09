@@ -440,7 +440,12 @@ class WebStorageExplorer {
     }
 }
 
-$(document).ready(() => {
-    let App = new WebStorageExplorer();
-    App.init();
-});
+// Tiny UMD
+if(typeof exports !== 'undefined') {
+    module.exports = WebStorageExplorer;
+} else {
+    $(document).ready(() => {
+        let App = new WebStorageExplorer();
+        App.init();
+    });
+}
