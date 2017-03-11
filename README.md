@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/Deliaz/web-storage-explorer.svg?branch=master)](https://travis-ci.org/Deliaz/web-storage-explorer)
-![Dependencies Status](https://david-dm.org/Deliaz/web-storage-explorer.svg)
+[![Dependencies Status](https://david-dm.org/Deliaz/web-storage-explorer.svg)](https://david-dm.org/deliaz/web-storage-explorer)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/hglfomidogadbhelcfomenpieffpfaeb.svg)](https://chrome.google.com/webstore/detail/web-storage-explorer/hglfomidogadbhelcfomenpieffpfaeb)
 
 ## Web Storage Explorer
