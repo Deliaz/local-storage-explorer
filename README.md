@@ -3,6 +3,8 @@
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/hglfomidogadbhelcfomenpieffpfaeb.svg)](https://chrome.google.com/webstore/detail/web-storage-explorer/hglfomidogadbhelcfomenpieffpfaeb)
 
 ## Web Storage Explorer
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Deliaz/web-storage-explorer.svg)](https://greenkeeper.io/)
 **Google Chrome extension for Web Developers**
 
 Web Storage Explorer brings you better ability to explore localStorage and sessionStorage values.
