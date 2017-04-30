@@ -112,6 +112,8 @@ class WebStorageExplorer {
                 });
 
                 this.renderStorageKeys()
+            } else {
+                this.clear();
             }
 
             this.onAfterParse();
@@ -446,6 +448,7 @@ if(typeof exports !== 'undefined') {
 } else {
     $(document).ready(() => {
         let App = new WebStorageExplorer();
+        window.App = App;
         App.init();
     });
 }
