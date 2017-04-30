@@ -298,7 +298,6 @@ class WebStorageExplorer {
                     self.el.valueView.JSONView('expand');
                     break;
                 case 'toggle':
-                    console.log($thisBtn.data('jsonViewLevel'));
                     self.el.valueView.JSONView('toggle', $thisBtn.data('jsonViewLevel') || 1);
                     break;
             }
@@ -342,12 +341,17 @@ class WebStorageExplorer {
 
     showValueForKey(key) {
         let val = this.storage.get(key).value;
+        this.el.valueView.parent().scrollTop(0);
 
         if (typeof val === "object") {
-            this.el.valueView.JSONView(val, {collapsed: false});
+            this.el.valueView
+                .JSONView(val, {collapsed: false})
+                .addClass('b-value-view__with-tools');
             this.el.jsonViewTools.removeClass('b-json-view-tools_hidden');
         } else {
-            this.el.valueView.text(val);
+            this.el.valueView
+                .removeClass('b-value-view__with-tools')
+                .text(val);
             this.el.jsonViewTools.addClass('b-json-view-tools_hidden');
         }
 

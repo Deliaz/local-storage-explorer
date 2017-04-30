@@ -92,10 +92,13 @@ a {
     color: #323232;
 }
 
+.b-json-view-tools {
+    background-color: #242424;
+    border-bottom: 1px solid #3f3f3f;
+}
 .b-json-view-tools__item {
     color: #6f6f6f;
     border: 1px solid #505050;
-
 }
 .b-json-view-tools__item:hover {
     color: #808080;

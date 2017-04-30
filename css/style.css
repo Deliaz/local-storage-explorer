@@ -235,6 +235,9 @@ a {
     font-family: inherit;
     user-select: initial;
 }
+.b-value-view__with-tools {
+    margin-top: 45px;
+}
 
 .b-value-view * {
     user-select: initial;
@@ -254,9 +257,12 @@ a {
 }
 
 .b-json-view-tools {
+    position: fixed;
     user-select: none;
-    padding: 5px 10px;
-    margin: 5px 0 0 -12px;
+    padding: 8px;
+    margin: 0 0 0 -12px;
+    width: 100%;
+    z-index: 10;
 }
 
 .b-json-view-tools_hidden {

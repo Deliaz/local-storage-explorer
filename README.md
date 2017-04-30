@@ -45,8 +45,8 @@ It will create two folders:
 * make i18n
 * comments
 * adjustable width of key list
-* Keyboard navigation in key list
+* keyboard navigation in key list
 * open by browser action?
-* Choose better icons
-* Parse timestamps
-* Other json-views libraries?
+* choose better icons
+* parse timestamps
+* other json-view libraries?
