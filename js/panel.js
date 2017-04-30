@@ -127,7 +127,11 @@ class WebStorageExplorer {
             <li class="b-keys-menu__item">
                 <a href="#!" class="b-keys-menu__link js-select-key" data-key="${key}" title="${key}">
                     <i class="fa fa-${ICON_TYPE[this.storage.get(key).type]} b-keys-menu__type-icon"></i>
-                    <span>${key}</span>
+                    <span class="b-keys-menu__key-name">${key}</span>
+                    
+                    <button class="b-keys-menu__remove-btn">
+                        <i class="fa fa-lg fa-remove"></i>
+                    </button>
                 </a>
             </li>
             `;

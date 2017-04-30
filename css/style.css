@@ -173,23 +173,48 @@ a {
     list-style: none;
 }
 .b-keys-menu__item {
-
+    position: relative;
 }
 .b-keys-menu__link {
     text-decoration: none;
     padding: 8px 10px;
     font-size: 14px;
     display: block;
-    transition: background-color 0.1s ease;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
 }
+
 .b-keys-menu__type-icon {
     width: 20px;
     text-align: center;
+}
+.b-keys-menu__remove-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 5px 0 6px;
+    height: 100%;
+    display: none;
+
+    transition: color 0.1s ease, background-color 0.1s ease;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 10px;
+    z-index: 310;
+    text-align: center;
+}
+
+.b-keys-menu__remove-btn:active,
+.b-keys-menu__remove-btn:focus {
+    outline: 0;
+}
+
+.b-keys-menu__link:hover .b-keys-menu__remove-btn {
+    display: block;
 }
 
 

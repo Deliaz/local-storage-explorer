@@ -69,7 +69,15 @@ a {
 
 .b-keys-menu__link:hover,
 .b-keys-menu__link_active {
-    background-color: rgba(0,0,0,0.1);
+    background-color: #d8d8d8;
+}
+
+.b-keys-menu__remove-btn {
+    background-color: #d8d8d8;
+    color: #c3c3c3;
+}
+.b-keys-menu__remove-btn:hover {
+    background-color: #c9c9c9;
 }
 
 .b-keys-menu__type-icon {
