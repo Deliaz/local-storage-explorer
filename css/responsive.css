@@ -27,6 +27,12 @@
     }
 }
 
+@media (max-width: 626px) {
+    .b-json-view-tools {
+        margin-left: -20px;
+    }
+}
+
 @media (min-width: 626px) {
     .b-page-overlay {
         display: none;
