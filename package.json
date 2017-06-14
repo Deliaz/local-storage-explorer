@@ -11,7 +11,7 @@
   "dependencies": {
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.3.1",
+    "gulp-clean-css": "^3.4.2",
     "gulp-concat": "^2.6.1",
     "gulp-html-replace": "^1.6.2",
     "gulp-if": "^2.0.2",
