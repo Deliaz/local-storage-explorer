@@ -3,14 +3,14 @@
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/hglfomidogadbhelcfomenpieffpfaeb.svg)](https://chrome.google.com/webstore/detail/web-storage-explorer/hglfomidogadbhelcfomenpieffpfaeb)
 [![Greenkeeper badge](https://badges.greenkeeper.io/Deliaz/web-storage-explorer.svg)](https://greenkeeper.io/)
 
-## Web Storage Explorer
+## Local Storage Explorer
 
 **Google Chrome extension for Web Developers**
 
-Web Storage Explorer brings you better ability to explore localStorage and sessionStorage values.
+Local Storage Explorer brings you better ability to explore localStorage and sessionStorage values.
 It integrates with DevTools panel and can parse and beautify JSON values.
 
-<img src="imgs/128.png" alt="Web Storage Explorer logo">
+<img src="imgs/128.png" alt="Local Storage Explorer logo">
 
 [**&raquo; Install from Chrome Web Store**](https://chrome.google.com/webstore/detail/web-storage-explorer/hglfomidogadbhelcfomenpieffpfaeb)
 
