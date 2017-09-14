@@ -288,3 +288,11 @@ a {
 .b-json-view-tools__item:focus {
     outline: none;
 }
+
+/*
+    TODO Improve class name for mark.js
+ */
+mark {
+    background: orange;
+    color: black;
+}

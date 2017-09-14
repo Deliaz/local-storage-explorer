@@ -408,6 +408,23 @@ class WebStorageExplorer {
         }
     }
 
+	/**
+	 * Public function when search on search event in devtools
+	 * @param action {string} Performed action
+	 * @param keyword {string} Searched keyword
+	 */
+	handleSearch(action, keyword) {
+		this.el.valueView.unmark();
+		switch (action) {
+			case 'performSearch':
+				this.el.valueView.mark(keyword);
+				break;
+			case 'cancelSearch':
+				// no action needed because marks already was cleared: see line 1 of this function
+				break;
+		}
+	}
+
     static tryParseJSON(strJSON) {
         let res;
         try {
