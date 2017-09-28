@@ -4,7 +4,8 @@
   "description": "",
   "main": "manifest.json",
   "scripts": {
-    "test": "mocha tests"
+    "test": "mocha tests",
+    "lint": "./node_modules/.bin/eslint js/**/*.js"
   },
   "author": "Deliaz",
   "license": "MIT",
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "eslint": "^4.6.1",
     "mocha": "^3.5.3"
   }
 }

@@ -1,14 +1,13 @@
 /**
  * Created by deliaz on 11/09/16.
  */
-
 class StorageDriver {
     constructor() {
 
     }
 
     getStoragesInfo(callback) {
-        let extractString = `(function() {return JSON.stringify({ls: localStorage.length, ss: sessionStorage.length});})();`;
+        let extractString = '(function() {return JSON.stringify({ls: localStorage.length, ss: sessionStorage.length});})();';
 
         chrome.devtools.inspectedWindow.eval(extractString, (stringResult, isException) => {
             if (!isException) {
@@ -31,7 +30,7 @@ class StorageDriver {
         });
     }
 
-    removeKey(storageName, keyName, callback) {
+    removeKey(storageName, keyName) {
         let deleteString = `(function() {${storageName}.removeItem('${keyName}');})();`;
 
         chrome.devtools.inspectedWindow.eval(deleteString, (stringResult, isException) => {
@@ -41,7 +40,7 @@ class StorageDriver {
         });
     }
 
-    clearStorage(storageName, callback) {
+    clearStorage(storageName) {
         let clearString = `(function() {${storageName}.clear();})();`;
 
         chrome.devtools.inspectedWindow.eval(clearString, (stringResult, isException) => {

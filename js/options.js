@@ -20,7 +20,7 @@ class Options {
             themeSelect: qs('.js-select-theme'),
             saveBtn: qs('.js-save-button'),
             header: qs('.js-options-header')
-        }
+        };
     }
 
 

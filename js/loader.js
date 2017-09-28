@@ -1,6 +1,6 @@
 let appShownFirst = false; // helps to avoid calling update on first show
 
-chrome.devtools.panels.create("Local Storage Explorer", null, "panel.html", panel => {
+chrome.devtools.panels.create('Local Storage Explorer', null, 'panel.html', panel => {
     panel.onShown.addListener(function (appWindow) {
 
         //Call update method

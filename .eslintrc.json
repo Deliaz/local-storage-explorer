@@ -1,0 +1,56 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": false,
+    "es6": true,
+    "webextensions": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+  ],
+  "rules": {
+    //    "indent": [
+    //      "error",
+    //      "tab",
+    //      {
+    //        "SwitchCase": 1
+    //      }
+    //    ],
+    "linebreak-style": 0,
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-mixed-spaces-and-tabs": [
+      "error",
+      "smart-tabs"
+    ],
+    "no-console": "off",
+    "no-var": ["error"],
+    "no-unused-vars": "off",
+    "no-cond-assign": "off",
+    "one-var": [
+      "error",
+      "never"
+    ]
+  },
+  "globals": {
+    "$": true,
+    "DEFAULT_THEME_NAME": true,
+    "DEFAULT_STORAGE": true,
+    "BTN_HIGHLIGHT_TIMEOUT": true,
+    "StorageDriver": true,
+    "ICON_TYPE": true,
+    "module": true
+  }
+}

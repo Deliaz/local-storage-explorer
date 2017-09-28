@@ -56,7 +56,7 @@ class WebStorageExplorer {
             clearStorageConfirmBtn: $('.js-clear-storage-confirm-button'),
             
             jsonViewTools: $('.js-json-view-tools')
-        }
+        };
     }
 
     getStorageInfo() {
@@ -75,7 +75,7 @@ class WebStorageExplorer {
                 ssOption.text(`sessionStorage [${parsedInfo.ss}]`);
             }
         } catch (e) {
-            console.error(e)
+            console.error(e);
         }
     }
 
@@ -111,7 +111,7 @@ class WebStorageExplorer {
                     });
                 });
 
-                this.renderStorageKeys()
+                this.renderStorageKeys();
             } else {
                 this.clear();
             }
@@ -229,7 +229,7 @@ class WebStorageExplorer {
         });
 
         this.el.showSubnavBtn
-            .on('click', function (e) {
+            .on('click', function () {
                 self.el.subnavMenu.toggleClass('b-subnav-menu_shown');
                 $(this).toggleClass('b-header__header-btn_active');
 
@@ -287,7 +287,7 @@ class WebStorageExplorer {
             window.open(href);
         });
         
-        this.el.jsonViewTools.on('click', 'button', function(e) {
+        this.el.jsonViewTools.on('click', 'button', function() {
             let $thisBtn = $(this);
 
             switch($thisBtn.data('jsonViewAction').toLowerCase()) {
@@ -343,7 +343,7 @@ class WebStorageExplorer {
         let val = this.storage.get(key).value;
         this.el.valueView.parent().scrollTop(0);
 
-        if (typeof val === "object") {
+        if (typeof val === 'object') {
             this.el.valueView
                 .JSONView(val, {collapsed: false})
                 .addClass('b-value-view__with-tools');
@@ -380,7 +380,6 @@ class WebStorageExplorer {
             } else {
                 this.tryToSelectNextKey();
             }
-        } else {
         }
     }
 

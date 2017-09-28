@@ -1,0 +1,9 @@
+build/**
+savior-*/**
+src/tests/**
+src/libs/aes.js
+src/libs/eventemitter.js
+src/libs/mustache.js
+Gruntfile.js
+src/background/ytdl-bundle.js
+src/common/pagecomm-pagecode.js

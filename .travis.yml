@@ -7,3 +7,4 @@ before_script:
 script:
   - gulp
   - npm test
+  - npm run lint
