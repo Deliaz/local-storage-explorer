@@ -71,7 +71,7 @@ gulp.task('css:vendor', () => {
         'node_modules/jquery-jsonview/dist/jquery.jsonview.css',
         'node_modules/font-awesome/css/font-awesome.min.css'
     ])
-        .pipe(cleanCSS({debug: true}, printCSSInfo))
+        .pipe(cleanCSS({debug: true, rebase: false}, printCSSInfo))
         .pipe(concat('vendor.min.css'))
         .pipe(gulp.dest(BUILD_DIR + 'css'));
 });
@@ -105,7 +105,8 @@ gulp.task('js:ga', () => {
 gulp.task('js:vendor', () => {
     return gulp.src([
         'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/jquery-jsonview/dist/jquery.jsonview.js'
+        'node_modules/jquery-jsonview/dist/jquery.jsonview.js',
+        'node_modules/mark.js/dist/jquery.mark.min.js'
     ])
         .pipe(uglify())
         .pipe(concat('vendor.min.js'))

@@ -7,3 +7,5 @@ src/libs/mustache.js
 Gruntfile.js
 src/background/ytdl-bundle.js
 src/common/pagecomm-pagecode.js
+js/ga.js
+gulpfile.js
