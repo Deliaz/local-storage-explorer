@@ -234,6 +234,7 @@ a {
     display: inline-block;
     font-family: inherit;
     user-select: text !important;
+    width: 100%;
 }
 .b-value-view__with-tools {
     margin-top: 45px;
