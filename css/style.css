@@ -233,7 +233,7 @@ a {
     margin-top: 10px;
     display: inline-block;
     font-family: inherit;
-    user-select: initial;
+    user-select: text !important;
 }
 .b-value-view__with-tools {
     margin-top: 45px;

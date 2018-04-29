@@ -3,3 +3,4 @@ node_modules
 build/
 dist/
 .conf.json
+package-lock.json
