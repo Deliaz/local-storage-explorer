@@ -12,9 +12,6 @@
     "48": "imgs/48.png",
     "128": "imgs/128.png"
   },
-  "permissions": [
-    "activeTab"
-  ],
   "devtools_page": "loader.html",
   "options_ui": {
     "page": "options.html",
