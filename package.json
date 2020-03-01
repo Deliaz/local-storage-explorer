@@ -1,6 +1,6 @@
 {
   "name": "chrome-localstorage-explorer",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "main": "manifest.json",
   "scripts": {
