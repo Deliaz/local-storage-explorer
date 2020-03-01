@@ -1,11 +1,11 @@
 // Gulp modules
 const gulp = require('gulp');
+const {task, series, parallel} = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
-const runSequence = require('run-sequence');
 const htmlReplace = require('gulp-html-replace');
 const zip = require('gulp-zip');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
 const replace = require('gulp-replace');
 const gulpif = require('gulp-if');
@@ -42,11 +42,12 @@ gulp.task('clean', cb => {
     rimraf(BUILD_DIR + '**', cb);
 });
 
-gulp.task('copy', () => {
+gulp.task('copy', (cb) => {
     gulp.src([
         'manifest.json',
     ])
-        .pipe(gulp.dest(BUILD_DIR))
+        .pipe(gulp.dest(BUILD_DIR));
+    cb();
 });
 
 gulp.task('fonts', () => {
@@ -90,6 +91,7 @@ gulp.task('js:app', () => {
         'js/**',
         '!js/ga.js'
     ])
+        .pipe(uglify())
         .pipe(gulp.dest(BUILD_DIR + 'js'));
 });
 
@@ -120,14 +122,11 @@ gulp.task('zip', () => {
         .pipe(gulp.dest(DIST_DIR))
 });
 
-gulp.task('default', cb => {
-    runSequence(
-        'clean',
-        ['copy', 'fonts', 'images'],
-        'css:app',
-        'css:vendor',
-        ['js:app','js:ga','js:vendor'],
-        'html:replace',
-        'zip',
-        cb);
-});
+module.exports.default = gulp.series(
+    'clean',
+    gulp.parallel('copy', 'fonts', 'images'),
+    'css:app',
+    'css:vendor',
+    gulp.parallel('js:app','js:ga','js:vendor'),
+    'html:replace',
+    'zip');

@@ -1,0 +1,19 @@
+body {
+    width: 280px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.shortcut {
+    font-size: 100%;
+    background: #aaa4;
+    padding: 4px 3px;
+    border-radius: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #242424;
+        color: #e5e5e5;
+    }
+}

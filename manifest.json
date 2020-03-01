@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Local Storage Explorer",
   "short_name": "LocalStorageX",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "minimum_chrome_version": "42",
   "description": "Developer tool for exploring localStorage and sessionStorage which lets you parse values",
   "author": "Deliaz",
@@ -13,14 +13,15 @@
     "128": "imgs/128.png"
   },
   "permissions": [
-    "tabs",
-    "http://*/*",
-    "https://*/*"
+    "activeTab"
   ],
   "devtools_page": "loader.html",
   "options_ui": {
     "page": "options.html",
     "chrome_style": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
   },
   "web_accessible_resources": [
     "options.html"
