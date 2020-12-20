@@ -1,6 +1,5 @@
 // Gulp modules
 const gulp = require('gulp');
-const {task, series, parallel} = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const htmlReplace = require('gulp-html-replace');

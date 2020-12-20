@@ -3,7 +3,7 @@
 
 ## Local Storage Explorer
 
-**Google Chrome extension for Web Developers**
+**Browser extension for Web Developers**
 
 Local Storage Explorer brings you better ability to explore localStorage and sessionStorage values.
 It integrates with DevTools panel and can parse and beautify JSON values.
@@ -38,15 +38,3 @@ To build extension just run:
 It will create two folders: 
  * `build/` &ndash; contains built files
  * `dist/` &ndash; contains compressed zip-file with files from `built`
-
-#### Todo list
-
-* parse JWT tokens
-* make i18n
-* comments
-* adjustable width of key list
-* keyboard navigation in key list
-* open by browser action?
-* choose better icons
-* parse timestamps
-* other json-view libraries?
