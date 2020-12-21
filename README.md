@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Deliaz/local-storage-explorer.svg?branch=master)](https://travis-ci.org/Deliaz/local-storage-explorer)
+![Node.js CI](https://github.com/Deliaz/local-storage-explorer/workflows/Node.js%20CI/badge.svg)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/hglfomidogadbhelcfomenpieffpfaeb.svg)](https://chrome.google.com/webstore/detail/local-storage-explorer/hglfomidogadbhelcfomenpieffpfaeb)
 
 ## Local Storage Explorer
