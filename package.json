@@ -1,7 +1,7 @@
 {
   "name": "chrome-localstorage-explorer",
-  "version": "1.2.1",
-  "description": "",
+  "version": "1.2.2",
+  "description": "Developer tool for exploring localStorage and sessionStorage which parses JSON values",
   "main": "manifest.json",
   "scripts": {
     "test": "mocha tests",
