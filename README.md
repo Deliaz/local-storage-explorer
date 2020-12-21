@@ -37,4 +37,4 @@ To build extension just run:
 
 It will create two folders: 
  * `build/` &ndash; contains built files
- * `dist/` &ndash; contains compressed zip-file with files from `built`
+ * `dist/` &ndash; contains compressed zip-file with files from `build`
